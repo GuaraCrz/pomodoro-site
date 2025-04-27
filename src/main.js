@@ -21,7 +21,7 @@ function create () {
    .setDisplaySize(1000, 500)
    .setOrigin(0.5,1);                         
 }
-e
+
 
 function update (time,delta) {
 

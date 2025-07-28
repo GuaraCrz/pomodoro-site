@@ -4,5 +4,27 @@ body {
 canvas {
     display: block;
     justify-self: center;
-    margin: 350px auto 0 auto;
+    margin: 250px auto 0 auto;
+}
+#hud {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index:10;
+    font-family: 'Arial',sans-serif;
+}
+
+#timer {
+    font-size:2.8em;
+    margin-bottom: 10px;
+}
+
+#botaoIniciar {
+    padding: 10px 10px;
+    font-size:1em;
+    border:none;
+    border-radius:5px;
+    cursor: pointer;
 }

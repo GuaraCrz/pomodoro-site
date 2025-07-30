@@ -50,14 +50,13 @@ function create () {
     frameRate: 1,
     repeat: -1
     });
-
     this.anims.create ({
         key: 'andar',
         frames: this.anims.generateFrameNumbers('gabi', {start: 4, end: 6}),
        frameRate: 6,
        repeat: -1 
     });
-    personagem = this.add.sprite(300,240,'gabi')
+    personagem = this.add.sprite(200,240,'gabi')
         .setOrigin(1, 0.5)
         .setScale(5);
 
@@ -66,16 +65,15 @@ function create () {
 //Nunhes Animações
     this.anims.create ({
         key:'idleNu',
-        frames: this.anims.generateFrameNumbers('nunhes',{start: 0, end: 4}),
-        framerate: 6,
+        frames: this.anims.generateFrameNumbers('nunhes',{start: 0, end: 5}),
+        frameRate: 6,
         repeat: -1
-    }),
+    }); 
 
-    nunhes = this.add.sprite(200,240,'nunhes')
-        .setOrigin(1 ,0.5)
-        .setScale(5);
+    nunhes = this.add.sprite(300,270,'nunhes')
+        .setOrigin(1 , 0.5)
+        .setScale(5)
 
-    nunhes.anims.play('idleNu')
 }
 
 
